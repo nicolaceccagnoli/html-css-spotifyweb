@@ -14,7 +14,7 @@
     MAIN
 */
  main {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     display: flex;
  }
 
@@ -22,7 +22,7 @@
     MAIN MENU NAV
 */
 .main-menu-nav {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,10 +33,15 @@
 }
 
 .spotify-logo img {
+    transform: translateY(15px);
     width: 50px;
+    filter: invert(100%);
+    margin-left: 15px;
+    margin-right: 10px;
 }
 
 .spotify-logo h1 {
+    color: white;
     font-size: 1.8em;
 }
 
@@ -49,7 +54,7 @@
 }
 
 .main-menu ul li:first-of-type {
-    padding: 5px 0 10px 10px;
+    padding: 5px 0 10px 15px;
 }
 
 .main-menu ul h4 {
@@ -57,11 +62,26 @@
 }
 
 .main-menu ul li{
-    padding: 10px;
+    padding: 10px 0 10px 20px;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: var(--sound-bar-color);
+}
+
+.profile > * {
+    color: var(--sound-bar-color);
+    text-decoration: none;
+}
+
+.profile a strong {
+    color: white;
 }
 
 .main-menu ul:first-of-type li:first-of-type {
-    border-left: 4px solid orchid;
+    border-left: 4px solid var(--border-button-color);
+    
 }
 
 .profile {
@@ -111,10 +131,9 @@
     MAIN-CONTAINER
 */
 .main-container {
-    height: calc(100vh - 300px);
+    height: calc(100vh - 200px);
     overflow: auto;
 }
-
 
 /* 
     NAV HEADER MAIN MENU
@@ -128,6 +147,15 @@
 
 .nav-header-main-menu ul li{
     display: inline-block;
+}
+
+.nav-header-main-menu ul li a {
+    text-decoration: none;
+    color: var(--sound-bar-color);
+}
+
+.nav-header-main-menu ul li:first-child a {
+    border-bottom-color: 5px solid var(--border-button-color);
 }
 
 /* 

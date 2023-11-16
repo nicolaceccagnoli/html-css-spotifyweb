@@ -17,8 +17,8 @@
 
 .debug .spotify-logo {
     background-color: crimson;
-    height: 150px;
-    line-height: 150px;
+    height: 100px;
+    line-height: 100px;
 }
 
 /* 
@@ -26,8 +26,8 @@
 */
 
 .debug .main-header {
-    height: 150px; 
-    line-height: calc(150px - 40px);
+    height: 100px; 
+    line-height: calc(100px - 40px);
     background-color: lightcoral;
 }
 
@@ -62,7 +62,7 @@
 */
 
 .debug.footer-nav {
-    height: 150px;
+    height: 100px;
     background-color: lightpink;
 }
 
