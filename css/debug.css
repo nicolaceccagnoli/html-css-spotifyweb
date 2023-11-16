@@ -40,6 +40,19 @@
 }
 
 /* 
+    MAIN-HOME CONTAINER
+*/
+.debug .my-home-container {
+    background-color: deepskyblue;
+}
+
+.debug .recently-played-cards .album-played-card  {
+    height: 200px;
+    width: 200px;
+    background-color: lightpink;
+}
+
+/* 
     FOOTER
 */
 

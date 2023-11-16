@@ -58,7 +58,7 @@
     padding: 10px;
 }
 
-.main-menu ul li:first-of-type {
+.main-menu ul:first-of-type li:first-of-type {
     border-left: 4px solid orchid;
 }
 
@@ -117,6 +117,15 @@
     display: inline-block;
 }
 
+/* 
+    MY-HOME-CONTAINER 
+*/
+
+.recently-played-cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
 
 /* 
 FOOTER
