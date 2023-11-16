@@ -42,16 +42,24 @@
     MAIN MENU
 */
 
-.main-menu ul li:first-of-type, .main-menu ul h4 {
+.main-menu ul h4 {
     padding: 0 0 10px 10px;
+}
+
+.main-menu ul li:first-of-type {
+    padding: 5px 0 10px 10px;
 }
 
 .main-menu ul h4 {
     padding-top: 10px;
 }
 
-.main-menu ul li:not(:first-of-type) {
+.main-menu ul li{
     padding: 10px;
+}
+
+.main-menu ul li:first-of-type {
+    border-left: 4px solid orchid;
 }
 
 .profile {
@@ -88,7 +96,6 @@
     vertical-align: middle;
 }
 
-
 /* 
     MAIN-CONTAINER
 */
@@ -96,6 +103,20 @@
     height: calc(100vh - 300px);
     padding: var(--main--size);
 }
+
+
+/* 
+    NAV HEADER MAIN MENU
+*/
+.nav-header-main-menu {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.nav-header-main-menu ul li{
+    display: inline-block;
+}
+
 
 /* 
 FOOTER
@@ -131,6 +152,11 @@ FOOTER
     .main-menu ul li a strong, .main-menu ul li a span, .playlist, .profile span {
         display: none;
     }
+
+    .main-menu ul li:first-of-type {
+        border-left: none;
+    }
+    
 
 }
 
