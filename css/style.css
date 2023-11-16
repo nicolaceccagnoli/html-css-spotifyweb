@@ -21,14 +21,19 @@
     MAIN MENU NAV
 */
 .main-menu-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* 
-    MAIN MENU
+    MAIN MENU CONTAINER
 */
-.main-menu {
+
+.main-menu-container {
     flex-grow: 1;
 }
+
 /* 
     MAIN-HEADER
 */
@@ -38,7 +43,7 @@
     MAIN-CONTAINER
 */
 .main-container {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 300px);
 }
 
 /* 
