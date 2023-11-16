@@ -15,12 +15,19 @@
     background-color: lightblue;
 }
 
+.debug .spotify-logo {
+    background-color: crimson;
+    height: 150px;
+    line-height: 150px;
+}
+
 /* 
     MAIN-HEADER
 */
 
 .debug .main-header {
     height: 150px; 
+    line-height: 150px;
     background-color: lightcoral;
 }
 

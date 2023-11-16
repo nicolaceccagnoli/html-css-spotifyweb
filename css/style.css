@@ -26,6 +26,19 @@
     justify-content: space-between;
 }
 
+.spotify-logo img, .spotify-logo h1 {
+   display: inline-block;
+}
+
+.spotify-logo img {
+    width: 50px;
+}
+
+.spotify-logo h1 {
+    font-size: 2em;
+}
+
+
 /* 
     MAIN MENU CONTAINER
 */
@@ -38,12 +51,15 @@
     MAIN-HEADER
 */
 .main-header {
+    text-align: end;
 }
+
 /* 
     MAIN-CONTAINER
 */
 .main-container {
     height: calc(100vh - 300px);
+    padding: 20px;
 }
 
 /* 
@@ -53,6 +69,7 @@ FOOTER
  .footer-nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
  }
 /* 
     REPONSIVE
