@@ -12,4 +12,8 @@
 html{
     font-family: 'Figtree', sans-serif;
     }
+
     
+    :root {
+        --main--size: 20px;
+    }

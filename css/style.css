@@ -38,6 +38,38 @@
     font-size: 2em;
 }
 
+/* 
+    MAIN MENU
+*/
+
+.main-menu ul li:first-of-type, .main-menu ul h4 {
+    padding: 0 0 10px 10px;
+}
+
+.main-menu ul h4 {
+    padding-top: 10px;
+}
+
+.main-menu ul li:not(:first-of-type) {
+    padding: 10px;
+}
+
+.profile {
+    margin-bottom: var(--main--size);
+}
+
+.profile h6 {
+    margin: 10px 0 10px 20px;
+}
+
+.profile hr{
+    width: 90%;
+    margin: 0 auto 10px auto;
+}
+
+.profile a {
+    margin-left: var(--main--size);
+}
 
 /* 
     MAIN MENU CONTAINER
@@ -51,15 +83,18 @@
     MAIN-HEADER
 */
 .main-header {
+    padding: var(--main--size);
     text-align: end;
+    vertical-align: middle;
 }
+
 
 /* 
     MAIN-CONTAINER
 */
 .main-container {
     height: calc(100vh - 300px);
-    padding: 20px;
+    padding: var(--main--size);
 }
 
 /* 
@@ -70,6 +105,7 @@ FOOTER
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:  var(--main--size);
  }
 /* 
     REPONSIVE
