@@ -14,6 +14,7 @@
     MAIN
 */
  main {
+    height: calc(100vh - 150px);
     display: flex;
  }
 
@@ -21,6 +22,7 @@
     MAIN MENU NAV
 */
 .main-menu-nav {
+    height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,10 +92,19 @@
 /* 
     MAIN-HEADER
 */
+
 .main-header {
     padding: var(--main--size);
     text-align: end;
     vertical-align: middle;
+}
+
+.main-header a {
+    text-decoration: none;
+    padding: 8px 24px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
 }
 
 /* 
@@ -162,6 +173,11 @@ p {
 /* 
 FOOTER
 */
+
+footer {
+    width: 100%;
+}
+
 .footer-nav{
     display: flex;
     justify-content: space-between;
@@ -185,8 +201,17 @@ FOOTER
     width: 80px;
 }
 
-.song-browse {
-    line-height: 60px;
+.song-browse i {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.song-title h6, .song-browse i {
+    color: var(--sound-bar-color);
+}
+
+.listening-nav {
+    width: 20%;
 }
 
 .play-buttons ul {
@@ -211,13 +236,16 @@ FOOTER
 }
 
 .play-bar hr {
-    border: 1px solid black;
     border-radius: 5px;
-    background-color: #222;
-    width: 500px;
+    background-color: var(--sound-bar-color);
+    width: 100%;
     height: 5px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.devices {
+    width: calc();
 }
 
 .devices ul {
@@ -234,11 +262,11 @@ FOOTER
     padding-right: 5px;
 }
 
-.devices hr {
+.devices .sound-volume {
     border: 1px solid black;
     border-radius: 5px;
-    background-color: #222;
-    width: 150px;
+    background-color: var(--sound-bar-color);
+    width: 80px;
     height: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -303,7 +331,4 @@ FOOTER
         border-left: none;
     }
     
-
 }
-
-
