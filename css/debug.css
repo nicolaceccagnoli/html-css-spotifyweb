@@ -45,6 +45,7 @@
 .debug .nav-header-main-menu {
     background-color: lightseagreen;
 }
+
 /* 
     MAIN-HOME CONTAINER
 */
@@ -55,7 +56,7 @@
 .debug .album-played-card  {
     height: 250px;
     width: 250px;
-    background-color: lightpink;
+    background-color: lightgrey;
 }
 
 /* 

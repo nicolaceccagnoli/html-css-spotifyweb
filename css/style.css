@@ -102,7 +102,6 @@
 .main-container {
     height: calc(100vh - 300px);
     overflow: auto;
-    padding: 0 var(--main--size);
 }
 
 
@@ -128,19 +127,24 @@
     RECENTLY PLAYED CONTAINER
 */
 
-.recently-played-container h2, .recently-played-container h3 {
-    padding: var(--main--size) 0;
+.my-row-cards h2 {
+    padding: 20px 40px;
+
 }
 
-.recently-played-cards {
+.my-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.my-card {
     text-align: center;
 }
 
-.played-card {
-    margin: 0 0 var(--main--size) 0;
-}
+/* 
+    MADE FOR ME CONTAINER
+*/
 
 /* 
 FOOTER
@@ -151,26 +155,24 @@ FOOTER
     align-items: center;
     padding:  var(--main--size);
 }
+
 /* 
     REPONSIVE
 */
 
 /* Desktop Piccolo */
 @media screen and (max-width: 1100px) {
-
-    .recently-played-cards{
+    .my-row {
+        display: flex;
         flex-wrap: wrap;
-        justify-content:flex-start;
-        }
-
-    .played-card {
     }
 
-    .recently-played-cards .album-played-card  {
-        height: 180px;
-        width: 180px;
-        background-color: lightpink;
+    .my-card {
+        height: 200px;
+        width: 200px;
+        margin: var(--main--size);
     }
+    
 }
 
 /* Tablet */
@@ -186,11 +188,15 @@ FOOTER
         display: none;
     }
 
-    .main-menu ul li a strong, .main-menu ul li a span, .playlist, .profile span {
+    .spotify-logo h1, .main-menu ul li a strong, .main-menu ul li a span, .playlist, .profile span {
         display: none;
     }
 
     .main-menu ul li:first-of-type {
+        border-left: none;
+    }
+    
+    .main-menu ul:first-of-type li:first-of-type {
         border-left: none;
     }
     
