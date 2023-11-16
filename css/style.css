@@ -35,7 +35,7 @@
 }
 
 .spotify-logo h1 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 /* 
@@ -122,7 +122,10 @@
 /* 
     MY-HOME-CONTAINER 
 */
-
+.my-home-container {
+    height: 100%;
+    overflow: auto;
+}
 /* 
     RECENTLY PLAYED CONTAINER
 */
@@ -133,13 +136,23 @@
 }
 
 .my-row {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .my-card {
+    width: calc((100% / 6) - 20px);
     text-align: center;
+    margin-left: 10px ;
+    margin-right: 10px;
+
+}
+
+.album-played-card {
+    width: 100%;
+    height: 300px;
 }
 
 /* 
@@ -162,15 +175,11 @@ FOOTER
 
 /* Desktop Piccolo */
 @media screen and (max-width: 1100px) {
-    .my-row {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    
 
     .my-card {
-        height: 200px;
-        width: 200px;
-        margin: var(--main--size);
+        width: calc((100% / 4) - 20px);
+        height: 100px;
     }
     
 }
@@ -178,7 +187,14 @@ FOOTER
 /* Tablet */
 @media screen and (max-width: 700px) {
 
+    .my-card {
+        width: calc(50% - 20px);
+        height: 100px;
+    }
 
+    .my-row .my-card:nth-child(3), .my-row .my-card:nth-child(4), .my-row .my-card:nth-child(5), .my-row .my-card:nth-child(6) {
+        margin-top: 200px;
+    }
 }
 
 /* Mobile Grande */
