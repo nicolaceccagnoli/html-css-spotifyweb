@@ -1,26 +1,54 @@
 /* 
-    RESET
+    FILE CSS 
 */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url(reset.css);
+@import url(debug.css);
+
 
 /* 
     GENERAL
 */
 
-html{
-    font-family: Arial, Helvetica, sans-serif;
+/* 
+    MAIN
+*/
+ main {
+    display: flex;
+ }
+
+/* 
+    MAIN MENU NAV
+*/
+.main-menu-nav {
 }
 
-.container{
-    margin: 0 auto;
-    max-width: 1200px;
+/* 
+    MAIN MENU
+*/
+.main-menu {
+    flex-grow: 1;
+}
+/* 
+    MAIN-HEADER
+*/
+.main-header {
+}
+/* 
+    MAIN-CONTAINER
+*/
+.main-container {
+    height: calc(100vh - 150px);
 }
 
+/* 
+FOOTER
+*/
+
+ .footer-nav{
+    display: flex;
+    justify-content: space-between;
+ }
 /* 
     REPONSIVE
 */
@@ -39,6 +67,5 @@ html{
 @media screen and (max-width: 600px) {
 
 }
-
 
 

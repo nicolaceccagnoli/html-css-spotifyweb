@@ -1,0 +1,42 @@
+/* 
+    DEBUG
+*/
+
+/* 
+    MAIN
+*/
+
+/* 
+    MAIN-MENU-NAV
+*/
+
+.debug.main-menu-nav{
+    width: 300px;
+    background-color: lightblue;
+}
+
+/* 
+    MAIN-HEADER
+*/
+
+.debug .main-header {
+    height: 150px; 
+    background-color: lightcoral;
+}
+
+/* 
+    MAIN-CONTAINER
+*/
+
+.debug .main-container {
+    background-color: lightgreen;
+}
+
+/* 
+    FOOTER
+*/
+
+.debug.footer-nav {
+    height: 150px;
+    background-color: lightpink;
+}
