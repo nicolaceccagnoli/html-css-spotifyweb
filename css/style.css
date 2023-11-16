@@ -124,6 +124,14 @@ FOOTER
 /* Mobile Grande */
 @media screen and (max-width: 600px) {
 
+    h1 {
+        display: none;
+    }
+
+    .main-menu ul li a strong, .main-menu ul li a span, .playlist, .profile span {
+        display: none;
+    }
+
 }
 
 
