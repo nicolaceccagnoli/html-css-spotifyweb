@@ -25,22 +25,20 @@ html{
     REPONSIVE
 */
 
-/* Mobile Piccolo */
-@media screen and (min-width: 48px) {
+/* Desktop Piccolo */
+@media screen and (max-width: 1100px) {
+    
+}
+
+/* Tablet */
+@media screen and (max-width: 700px) {
 
 }
 
 /* Mobile Grande */
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 600px) {
 
 }
 
-/* Tablet */
-@media screen and (min-width: 768px) {
 
-}
 
-/* Desktop */
-@media screen and (min-width: 992px) {
-    
-}
