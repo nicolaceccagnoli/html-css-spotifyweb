@@ -40,15 +40,21 @@
 }
 
 /* 
+    NAV HEADER MAIN MENU
+*/
+.debug .nav-header-main-menu {
+    background-color: lightseagreen;
+}
+/* 
     MAIN-HOME CONTAINER
 */
 .debug .my-home-container {
     background-color: deepskyblue;
 }
 
-.debug .recently-played-cards .album-played-card  {
-    height: 200px;
-    width: 200px;
+.debug .album-played-card  {
+    height: 250px;
+    width: 250px;
     background-color: lightpink;
 }
 
