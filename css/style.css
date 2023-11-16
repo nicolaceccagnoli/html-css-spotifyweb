@@ -160,10 +160,6 @@ p {
 }
 
 /* 
-    MADE FOR ME CONTAINER
-*/
-
-/* 
 FOOTER
 */
 .footer-nav{
@@ -173,6 +169,81 @@ FOOTER
     padding:  var(--main--size);
 }
 
+.song-nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.song-nav ul li .song, .song-nav ul li a, .song-nav ul li a i {
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.song-nav ul li .song {
+    height: 80px;
+    width: 80px;
+}
+
+.song-browse {
+    line-height: 60px;
+}
+
+.play-buttons ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.play-buttons ul li {
+    display: block;
+}
+
+.play-buttons ul li a {
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.play-bar {
+    display: flex;
+    line-height: 5px;
+}
+
+.play-bar hr {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #222;
+    width: 500px;
+    height: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.devices ul {
+    display: flex;
+}
+
+.devices ul li {
+    line-height: 0px;
+    display: block;
+}
+
+.devices ul li a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.devices hr {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #222;
+    width: 150px;
+    height: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
 /* 
     REPONSIVE
 */

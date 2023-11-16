@@ -65,3 +65,7 @@
     height: 150px;
     background-color: lightpink;
 }
+
+.debug .song {
+    background-color: red;
+}
