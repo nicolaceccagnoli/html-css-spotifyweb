@@ -23,6 +23,10 @@
     transform: scale(1.2);
 }
 
+.main-header a:hover {
+    transform: scale(1.2);
+}
+
 .play-hover {
     position: absolute;
     top: 50%;

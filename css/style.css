@@ -141,7 +141,6 @@ a {
     color: white;
 }
 
-
 .profile {
     margin-bottom: var(--main--size);
 }
@@ -186,10 +185,6 @@ a {
     border-radius:20px;
     display: inline-block;
     line-height: 32px;
-}
-
-.main-header a:hover {
-    transform: scale(1.2);
 }
 
 /* 
@@ -273,10 +268,6 @@ p {
     display: flex;
     flex-wrap: wrap;
 }
-
-/* .my-row:nth-of-type(2) {
-    margin-top: 50px;
-} */
 
 .my-card {
     width: calc((100% / 6) - 20px);
