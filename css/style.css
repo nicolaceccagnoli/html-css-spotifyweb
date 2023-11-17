@@ -156,7 +156,7 @@
 */
 
 .nav-header-main-menu {
-    /* width: 80%; */
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     position: sticky;
@@ -360,7 +360,7 @@ footer {
     }
     
     .nav-header-main-menu ul li {
-        padding: 10px;
+        padding: 5px;
     }
     
 }
