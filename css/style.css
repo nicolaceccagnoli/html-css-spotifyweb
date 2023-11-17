@@ -368,6 +368,7 @@ footer {
     display: flex;
     line-height: 5px;
     position: relative;
+    cursor: pointer;
 }
 
 .play-bar div {
@@ -379,7 +380,7 @@ footer {
     margin-right: 5px;
 }
 
-.play-bar div:nth-of-type(2){
+.play-bar .time-bar-seconds{
     position: absolute;
     background-color: white;
     left: 27px;
@@ -414,7 +415,7 @@ footer {
     transform: translateY(5px);
 }
 
-.devices .sound-volume div:nth-of-type(2) {
+.devices .sound-volume .volume-level {
     position: absolute;
     top: 0;
     width: 30%;

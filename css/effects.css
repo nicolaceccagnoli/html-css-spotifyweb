@@ -50,3 +50,33 @@
 .album-played-card:hover .play-hover {
     display: block;
 }
+
+.play-bar .time-bar-seconds .time-id{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--border-button-color);
+    position: absolute;
+    top: -5px;
+    left: 95%;
+    display:none;
+} 
+
+.play-bar:hover .time-id, .devices ul li:last-of-type  a .volume-level:hover .volume-id {
+    display: block;
+}
+
+.play-bar:hover .time-bar-seconds, .devices ul li:last-of-type .sound-volume .volume-level:hover{
+    background-color: var(--border-button-color);
+}
+
+.devices ul li:last-of-type a .volume-level .volume-id {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--border-button-color);
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    display: none;
+}
