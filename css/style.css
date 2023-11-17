@@ -385,6 +385,7 @@ footer {
     background-color: white;
     left: 27px;
     width: 20%;
+    animation: play 247s linear infinite;
 }
 
 .devices ul {
