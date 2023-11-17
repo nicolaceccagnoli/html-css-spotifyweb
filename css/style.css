@@ -248,6 +248,7 @@ a {
     overflow: auto;
     padding: var(--main--size);
 }
+
 /* 
     RECENTLY PLAYED CONTAINER
 */
@@ -273,9 +274,12 @@ p {
     flex-wrap: wrap;
 }
 
+/* .my-row:nth-of-type(2) {
+    margin-top: 50px;
+} */
+
 .my-card {
     width: calc((100% / 6) - 20px);
-    /* height: 100%; */
     text-align: center;
     margin-left: 10px ;
     margin-right: 10px;
@@ -321,6 +325,7 @@ footer {
     align-items: center;
     list-style: none;
 }
+
 .song-nav ul li .song, .song-nav ul li a, .song-nav ul li a i {
     margin-right: 10px;
     margin-left: 10px;
@@ -437,13 +442,12 @@ footer {
         height: 100%;
     }
 
-    .my-row  {
-        height: 40%;
-    }
-
     .my-card {
         width: calc((100% / 4) - 20px);
-        height: 100px;
+    }
+
+    .my-home-container h3 {
+        font-size: small;
     }
 
     .nav-header-main-menu {
@@ -465,11 +469,6 @@ footer {
 
     .my-card {
         width: calc(50% - 20px);
-        height: 100px;
-    }
-
-    .my-row .my-card:nth-child(3), .my-row .my-card:nth-child(4), .my-row .my-card:nth-child(5), .my-row .my-card:nth-child(6) {
-        margin-top: 200px;
     }
 
     .profile a {
