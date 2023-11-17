@@ -300,7 +300,6 @@ FOOTER
 
 footer {
     background-color: var(--footer-bg-color);
-    width: 100%;
 }
 
 .footer-nav{
