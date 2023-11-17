@@ -178,14 +178,23 @@ a {
 }
 
 .main-header a {
-    padding: 8px 24px;
+    height: 40px;
+    font-size: small;
+    padding: 4px 12px;
     border: 1px solid white;
     color: white;
-    border-radius: 20px;
+    border-radius:20px;
+    display: inline-block;
+    line-height: 32px;
+}
+
+.main-header a:hover {
+    transform: scale(1.2);
 }
 
 /* 
-    MAIN-CONTAINER
+    MAIN
+    -CONTAINER
 */
 
 .main-container {
