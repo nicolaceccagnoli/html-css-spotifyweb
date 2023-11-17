@@ -179,8 +179,10 @@
     color: var(--sound-bar-color);
 }
 
-.nav-header-main-menu ul li:first-child a {
-    border-bottom: 5px solid var(--border-button-color);
+.nav-header-main-menu ul li:first-child div {
+    border: 1px solid var(--border-button-color);
+    width: 30px;
+    margin: 0 auto;
 }
 
 /* 
@@ -355,6 +357,10 @@ footer {
         height: 100px;
     }
 
+    .nav-header-main-menu {
+        width: 90%;
+    }
+
     .nav-header-main-menu ul {
         justify-content: center;
     }
@@ -423,4 +429,8 @@ footer {
         border-left: none;
     }
     
+    .nav-header-main-menu {
+        width: 80%;
+    }
+
 }
