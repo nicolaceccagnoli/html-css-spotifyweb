@@ -6,7 +6,7 @@
     color: white;
 }
 
-.nav-header-main-menu a:hover {
+.nav-header-main-menu-small a:hover {
     color: white;
 }
 
@@ -17,4 +17,8 @@
 .song-nav ul li h6:hover {
     color: white;
     text-decoration: underline;
+}
+
+.play-buttons .fa-xl:hover, .play-buttons .fa-2xl:hover{
+    transform: scale(1.2);
 }
