@@ -494,11 +494,8 @@ footer {
         width: calc(100% - 70px);
     }
 
-    h1 {
-        display: none;
-    }
 
-    .spotify-logo h1, .main-menu ul li a strong, .main-menu ul li a span, .playlist, .profile small, .profile strong {
+    h1, .spotify-logo h1, .main-menu ul li a strong, .main-menu ul li a span, .playlist, .profile small, .profile strong, .profile hr {
         display: none;
     }
 
