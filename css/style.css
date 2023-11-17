@@ -44,7 +44,6 @@
 .spotify-logo img {
     transform: translateY(12px);
     width: 40px;
-    filter: invert(100%);
     margin-left: 15px;
     margin-right: 5px;
 }
@@ -58,10 +57,6 @@
     MAIN MENU
 */
 
-.main-menu ul h4 {
-    padding: 0 0 10px 15px;
-}
-
 .main-menu ul li:first-of-type {
     padding: 5px 0 10px 15px;
 }
@@ -70,9 +65,50 @@
     padding: 10px 0 10px 20px;
 }
 
-.main-menu ul li a {
+.main-menu ul li a,  .profile a {
     text-decoration: none;
     color: var(--sound-bar-color);
+    display: flex;
+    align-items: center;
+}
+
+.main-menu ul li a img {
+    width: 30px;
+}
+
+.main-menu ul:first-of-type li:first-of-type {
+    border-left: 4px solid var(--border-button-color);
+    
+}
+
+.playlist h5 {
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.main-menu ul:nth-of-type(2) li:first-of-type a i{
+    font-size: 2em;
+    padding-right: 5px;
+}
+
+.profile img {
+    width: 20px;
+    padding-right: 2px;
+}
+
+.profile a:first-of-type {
+    padding-bottom: 10px;
+}
+
+
+.profile a:nth-of-type(2) img {
+    filter: invert(100%);
+    background-color: var(--sound-bar-color);
+    border-radius: 50% ;
+}
+
+.profile a:nth-of-type(2) strong {
+    padding-left: 5px;
 }
 
 .profile > * {
@@ -84,30 +120,13 @@
     color: white;
 }
 
-.main-menu ul:first-of-type li:first-of-type {
-    border-left: 4px solid var(--border-button-color);
-    
-}
-
-.playlist h4 {
-    margin-bottom: 10px;
-    padding-left: 15px;
-}
-
-.main-menu ul:nth-of-type(2) li:first-of-type a i{
-    font-size: 3em;
-}
 
 .profile {
     margin-bottom: var(--main--size);
 }
 
-.profile h6 {
-    margin: 10px 0 10px 20px;
-}
-
 .profile hr{
-    width: 90%;
+    width: 80%;
     margin: 0 auto 10px auto;
 }
 
@@ -192,6 +211,7 @@
 .my-home-container {
     height: 100%;
     overflow: auto;
+    padding: var(--main--size);
 }
 /* 
     RECENTLY PLAYED CONTAINER
