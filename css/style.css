@@ -27,7 +27,11 @@
     width: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: column;
     overflow: auto;
 }
 
