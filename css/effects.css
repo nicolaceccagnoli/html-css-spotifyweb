@@ -2,3 +2,19 @@
     EFFETTI
 */
 
+.main-menu a:hover{
+    color: white;
+}
+
+.nav-header-main-menu a:hover {
+    color: white;
+}
+
+.song-nav ul li i:hover {
+    color: white;
+}
+
+.song-nav ul li h6:hover {
+    color: white;
+    text-decoration: underline;
+}

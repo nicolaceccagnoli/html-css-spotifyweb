@@ -10,6 +10,10 @@
     GENERAL
 */
 
+a {
+    text-decoration: none;
+}
+
 /* 
     MAIN
 */
@@ -75,13 +79,15 @@
 .main-menu ul li:first-of-type {
     padding: 5px 0 10px 15px;
 }
+.main-menu ul:first-of-type li:first-of-type a {
+    color: white;
+}
 
 .main-menu ul li{
     padding: 10px 0 10px 20px;
 }
 
 .main-menu ul li a,  .profile a {
-    text-decoration: none;
     color: var(--sound-bar-color);
     display: flex;
     align-items: center;
@@ -172,7 +178,6 @@
 }
 
 .main-header a {
-    text-decoration: none;
     padding: 8px 24px;
     border: 1px solid white;
     color: white;
@@ -188,6 +193,7 @@
     height: calc(100vh - 200px);
     overflow: auto;
 }
+
 
 /* 
     NAV HEADER MAIN MENU
@@ -267,7 +273,6 @@ p {
 
 .album-played-card {
     width: 100%;
-    /* height: 300px; */
 }
 
 .my-card .album-played-card img {
@@ -305,9 +310,7 @@ footer {
     align-items: center;
     list-style: none;
 }
-
 .song-nav ul li .song, .song-nav ul li a, .song-nav ul li a i {
-    text-decoration: none;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -350,7 +353,6 @@ footer {
 }
 
 .play-buttons ul li a {
-    text-decoration: none;
     padding-left: 5px;
     padding-right: 5px;
 }
