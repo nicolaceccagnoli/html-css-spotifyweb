@@ -30,8 +30,10 @@
 }
 
 .main-menu{
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     overflow: auto;
 }
 
@@ -154,11 +156,19 @@
 */
 
 .nav-header-main-menu {
+    /* width: 80%; */
+    margin: 0 auto;
     text-align: center;
     position: sticky;
     top: 0;
-    padding: var(--main--size);
+    padding: 10px;
 }   
+
+.nav-header-main-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .nav-header-main-menu ul li{
     display: inline-block;
@@ -292,18 +302,13 @@ footer {
     line-height: 5px;
 }
 
-.play-bar hr {
-    border: 1px solid var(--sound-bar-color);
+.play-bar div {
     border-radius: 5px;
     background-color: var(--sound-bar-color);
     width: 100%;
     height: 5px;
     margin-left: 5px;
     margin-right: 5px;
-}
-
-.devices {
-    width: calc();
 }
 
 .devices ul {
@@ -324,11 +329,11 @@ footer {
     border: 1px solid var(--sound-bar-color);
     border-radius: 5px;
     background-color: var(--sound-bar-color);
-    width: 80px;
+    width: 50px;
     height: 5px;
     margin-left: 5px;
     margin-right: 5px;
-
+    transform: translateY(5px);
 }
 /* 
     REPONSIVE
@@ -348,6 +353,14 @@ footer {
     .my-card {
         width: calc((100% / 4) - 20px);
         height: 100px;
+    }
+
+    .nav-header-main-menu ul {
+        justify-content: center;
+    }
+    
+    .nav-header-main-menu ul li {
+        padding: 10px;
     }
     
 }
