@@ -273,6 +273,7 @@ p {
 }
 
 .album-played-card {
+    position: relative;
     width: 100%;
 }
 

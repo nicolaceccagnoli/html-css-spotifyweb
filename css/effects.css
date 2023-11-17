@@ -22,3 +22,27 @@
 .play-buttons .fa-xl:hover, .play-buttons .fa-2xl:hover{
     transform: scale(1.2);
 }
+
+.play-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.play-hover i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    font-size: 5em;
+    color: white;
+}
+
+.album-played-card:hover .play-hover {
+    display: block;
+}
