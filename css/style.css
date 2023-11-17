@@ -15,6 +15,7 @@
 */
  main {
     height: calc(100vh - 100px);
+    width: 100%;
     display: flex;
  }
 
@@ -23,6 +24,7 @@
 */
 .main-menu-nav {
     height: calc(100vh - 100px);
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,16 +35,16 @@
 }
 
 .spotify-logo img {
-    transform: translateY(15px);
-    width: 50px;
+    transform: translateY(12px);
+    width: 40px;
     filter: invert(100%);
     margin-left: 15px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .spotify-logo h1 {
     color: white;
-    font-size: 1.8em;
+    font-size: 1.2em;
 }
 
 /* 
@@ -50,15 +52,11 @@
 */
 
 .main-menu ul h4 {
-    padding: 0 0 10px 10px;
+    padding: 0 0 10px 15px;
 }
 
 .main-menu ul li:first-of-type {
     padding: 5px 0 10px 15px;
-}
-
-.main-menu ul h4 {
-    padding-top: 10px;
 }
 
 .main-menu ul li{
@@ -84,6 +82,15 @@
     
 }
 
+.playlist h4 {
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.main-menu ul:nth-of-type(2) li:first-of-type a i{
+    font-size: 3em;
+}
+
 .profile {
     margin-bottom: var(--main--size);
 }
@@ -107,6 +114,7 @@
 
 .main-menu-container {
     flex-grow: 1;
+    width: calc(100% - 300px);
 }
 
 /* 
@@ -130,6 +138,7 @@
 /* 
     MAIN-CONTAINER
 */
+
 .main-container {
     height: calc(100vh - 200px);
     overflow: auto;
@@ -138,6 +147,7 @@
 /* 
     NAV HEADER MAIN MENU
 */
+
 .nav-header-main-menu {
     text-align: center;
     position: sticky;
@@ -155,12 +165,13 @@
 }
 
 .nav-header-main-menu ul li:first-child a {
-    border-bottom-color: 5px solid var(--border-button-color);
+    border-bottom: 5px solid var(--border-button-color);
 }
 
 /* 
     MY-HOME-CONTAINER 
 */
+
 .my-home-container {
     height: 100%;
     overflow: auto;
@@ -170,12 +181,13 @@
 */
 
 h2 {
-    padding: 50px 10px 20px 10px;
+    padding: 50px 10px 12px 10px;
 
 }
 
 p {
-    padding: 0 10px 10px 10px;
+    padding: 8px 10px 20px 10px;
+    color: var(--sound-bar-color);
 }
 
 .my-row {
@@ -186,16 +198,28 @@ p {
 
 .my-card {
     width: calc((100% / 6) - 20px);
-    height: 100%;
+    /* height: 100%; */
     text-align: center;
     margin-left: 10px ;
     margin-right: 10px;
-
 }
 
 .album-played-card {
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
+}
+
+.my-card .album-played-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.album-played-card {
+    margin-bottom: 24px;
+}
+
+.my-row:nth-of-type(3) .my-card h3 {
+    margin-bottom: 20px;
 }
 
 /* 
@@ -264,6 +288,7 @@ footer {
 }
 
 .play-bar hr {
+    border: 1px solid var(--sound-bar-color);
     border-radius: 5px;
     background-color: var(--sound-bar-color);
     width: 100%;
@@ -291,7 +316,7 @@ footer {
 }
 
 .devices .sound-volume {
-    border: 1px solid black;
+    border: 1px solid var(--sound-bar-color);
     border-radius: 5px;
     background-color: var(--sound-bar-color);
     width: 80px;
@@ -343,11 +368,32 @@ footer {
 /* Mobile Grande */
 @media screen and (max-width: 600px) {
 
+    .main-menu-nav {
+        width: 70px;
+    }
+
+    .main-menu ul li {
+        transform: translateX(5px);
+    }
+    
+    .profile {
+        transform: translateX(5px);
+    }
+
+    .profile hr {
+        width: 50px;
+        margin: 0 4px 10px 4px;
+    }
+
+    .main-menu-container {
+        width: calc(100% - 70px);
+    }
+
     h1 {
         display: none;
     }
 
-    .spotify-logo h1, .main-menu ul li a strong, .main-menu ul li a span, .playlist, .profile span {
+    .spotify-logo h1, .main-menu ul li a strong, .main-menu ul li a span, .playlist, .profile span, .profile strong {
         display: none;
     }
 
