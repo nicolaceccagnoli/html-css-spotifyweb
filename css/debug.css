@@ -10,47 +10,43 @@
     MAIN-MENU-NAV
 */
 
-.debug.main-menu-nav{
+/* .debug.main-menu-nav{
     background-color: lightblue;
-}
+} */
 
-.debug .spotify-logo {
+/* .debug .spotify-logo {
     background-color: crimson;
-    height: 100px;
-    line-height: 100px;
-}
+} */
 
 /* 
     MAIN-HEADER
 */
 
-.debug .main-header {
-    height: 100px; 
-    line-height: calc(100px - 40px);
+/* .debug .main-header {
     background-color: lightcoral;
-}
+} */
 
 /* 
     MAIN-CONTAINER
 */
 
-.debug .main-container {
+/* .debug .main-container {
     background-color: lightgreen;
-}
+} */
 
 /* 
     NAV HEADER MAIN MENU
 */
-.debug .nav-header-main-menu {
+/* .debug .nav-header-main-menu {
     background-color: lightseagreen;
-}
+} */
 
 /* 
     MAIN-HOME CONTAINER
 */
-.debug .my-home-container {
+/* .debug .my-home-container {
     background-color: deepskyblue;
-}
+} */
 
 /* .debug .album-played-card  {
     background-color: lightgrey;
@@ -60,11 +56,10 @@
     FOOTER
 */
 
-.debug.footer-nav {
-    height: 100px;
+/* .debug.footer-nav {
     background-color: lightpink;
-}
+} */
 
-.debug .song {
+/* .debug .song {
     background-color: red;
-}
+} */

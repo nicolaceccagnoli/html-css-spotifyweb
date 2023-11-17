@@ -14,8 +14,12 @@ html{
     }
 
     
-    :root {
-        --main--size: 20px;
-        --sound-bar-color: #5A5A5A;
-        --border-button-color: #AEFF2F;
-    }
+:root {
+    --main--size: 20px;
+    --sound-bar-color: #5A5A5A;
+    --border-button-color: #AEFF2F;
+    --main-bg-color: #000;
+    --secondary-bg-color: #080B13;
+    --menu-bg-color: #141923;
+    --footer-bg-color: #282828;
+}

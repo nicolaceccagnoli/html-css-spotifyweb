@@ -4,7 +4,7 @@
 
 @import url(reset.css);
 @import url(debug.css);
-
+@import url(effects.css);
 
 /* 
     GENERAL
@@ -23,6 +23,7 @@
     MAIN MENU NAV
 */
 .main-menu-nav {
+    background-color: var(--main-bg-color);
     height: calc(100vh - 100px);
     width: 200px;
     display: flex;
@@ -44,6 +45,11 @@
 .playlist {
     overflow: auto;
     height: 100%;
+}
+
+.spotify-logo {
+    height: 100px;
+    line-height: 100px;
 }
 
 .spotify-logo img, .spotify-logo h1 {
@@ -157,6 +163,9 @@
 */
 
 .main-header {
+    background-color: var(--secondary-bg-color);
+    height: 100px; 
+    line-height: calc(100px - 40px);
     padding: var(--main--size);
     text-align: end;
     vertical-align: middle;
@@ -175,6 +184,7 @@
 */
 
 .main-container {
+    background-color: var(--menu-bg-color);
     height: calc(100vh - 200px);
     overflow: auto;
 }
@@ -227,8 +237,13 @@
 */
 
 h2 {
+    color: white;
     padding: 50px 10px 12px 10px;
 
+}
+
+.my-home-container h3 {
+    color: white;
 }
 
 p {
@@ -273,10 +288,12 @@ FOOTER
 */
 
 footer {
+    background-color: var(--footer-bg-color);
     width: 100%;
 }
 
 .footer-nav{
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -285,6 +302,7 @@ footer {
 
 .song-nav ul{
     display: flex;
+    align-items: center;
     list-style: none;
 }
 
@@ -295,8 +313,17 @@ footer {
 }
 
 .song-nav ul li .song {
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
+}
+
+.song-nav ul li .song img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.song-nav h5, .listening-nav i, .listening-nav small, .devices-nav i {
+    color: white;
 }
 
 .song-browse i {
@@ -331,6 +358,7 @@ footer {
 .play-bar {
     display: flex;
     line-height: 5px;
+    position: relative;
 }
 
 .play-bar div {
@@ -340,6 +368,13 @@ footer {
     height: 5px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.play-bar div:nth-of-type(2){
+    position: absolute;
+    background-color: white;
+    left: 27px;
+    width: 20%;
 }
 
 .devices ul {
@@ -356,8 +391,11 @@ footer {
     padding-right: 5px;
 }
 
-.devices .sound-volume {
-    border: 1px solid var(--sound-bar-color);
+.devices ul li:last-child {
+    position: relative;
+}
+
+.devices .sound-volume div {
     border-radius: 5px;
     background-color: var(--sound-bar-color);
     width: 50px;
@@ -366,6 +404,15 @@ footer {
     margin-right: 5px;
     transform: translateY(5px);
 }
+
+.devices .sound-volume div:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    background-color: white;
+}
+
+
 /* 
     REPONSIVE
 */
@@ -446,7 +493,7 @@ footer {
         display: none;
     }
 
-    .spotify-logo h1, .main-menu ul li a strong, .main-menu ul li a span, .playlist, .profile span, .profile strong {
+    .spotify-logo h1, .main-menu ul li a strong, .main-menu ul li a span, .playlist, .profile small, .profile strong {
         display: none;
     }
 
