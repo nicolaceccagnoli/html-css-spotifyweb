@@ -47,8 +47,35 @@ a {
 }
 
 .playlist {
-    overflow: auto;
+    flex-grow: 1;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.playlist h4 {
+    color: white;
+}
+
+.playlist h4, .playlist h5 {
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.playlist-list{
     height: 100%;
+    overflow: auto;
+}
+
+.playlist h5 {
+    color: var(--sound-bar-color);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.playlist h5 i {
+    font-size: 36px;
+    padding-right: 5px;
 }
 
 .spotify-logo {
@@ -76,10 +103,11 @@ a {
     MAIN MENU
 */
 
-.main-menu ul li:first-of-type {
+.main-menu ul:first-child li:first-of-type {
     padding: 5px 0 10px 15px;
 }
-.main-menu ul:first-of-type li:first-of-type a {
+
+.main-menu ul:first-child li:first-of-type a {
     color: white;
 }
 
@@ -97,14 +125,9 @@ a {
     width: 30px;
 }
 
-.main-menu ul:first-of-type li:first-of-type {
+.main-menu ul:first-child li:first-of-type {
     border-left: 4px solid var(--border-button-color);
     
-}
-
-.playlist h5 {
-    padding-left: 15px;
-    margin-top: 5px;
 }
 
 .main-menu ul:nth-of-type(2) li:first-of-type a i{
@@ -345,7 +368,7 @@ footer {
 }
 
 .listening-nav {
-    width: 50%;
+    width: 30%;
 }
 
 .play-buttons ul {
@@ -370,7 +393,7 @@ footer {
     cursor: pointer;
 }
 
-.play-bar div {
+.play-bar > div {
     border-radius: 5px;
     background-color: var(--sound-bar-color);
     width: 100%;
@@ -408,7 +431,7 @@ footer {
 .devices .sound-volume div {
     border-radius: 5px;
     background-color: var(--sound-bar-color);
-    width: 50px;
+    width: 70px;
     height: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -422,6 +445,16 @@ footer {
     background-color: white;
 }
 
+.devices ul li:last-of-type a .volume-level .volume-id {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--border-button-color);
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    display: none;
+}
 
 /* 
     REPONSIVE

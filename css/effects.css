@@ -2,7 +2,7 @@
     EFFETTI
 */
 
-.main-menu a:hover{
+.main-menu a:hover, .playlist h5:hover{
     color: white;
 }
 
@@ -62,23 +62,12 @@
     display:none;
 } 
 
-.play-bar:hover .time-id, .devices ul li:last-of-type  a .volume-level:hover .volume-id {
+.play-bar:hover .time-id, .devices ul li:last-child  .sound-volume:hover .volume-id {
     display: block;
 }
 
-.play-bar:hover .time-bar-seconds, .devices ul li:last-of-type .sound-volume .volume-level:hover{
+.play-bar:hover .time-bar-seconds, .devices ul li:last-of-type .sound-volume:hover .volume-level{
     background-color: var(--border-button-color);
-}
-
-.devices ul li:last-of-type a .volume-level .volume-id {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: var(--border-button-color);
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    display: none;
 }
 
 @keyframes play {
@@ -88,7 +77,6 @@
     }
 
     100% {
-        right: 27px;
-        width: 100%;
+        width: calc(100% - 58px);
     }
 }
