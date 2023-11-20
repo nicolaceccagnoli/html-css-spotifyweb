@@ -430,6 +430,38 @@ footer {
     animation: play 247s linear infinite;
 }
 
+.play-bar .time-bar-seconds .time-id{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--border-button-color);
+    position: absolute;
+    top: -5px;
+    /* left: 100%; */
+    right: -10px;
+    display:none;
+} 
+
+.play-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.play-hover i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    font-size: 5em;
+    color: white;
+}
+
 .devices ul {
     display: flex;
 }
